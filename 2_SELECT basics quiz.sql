@@ -7,3 +7,14 @@ Answer:
 SELECT name, population
   FROM world
  WHERE population BETWEEN 1000000 AND 1250000
+
+--  2. Pick the result you would obtain from this code:
+
+--       SELECT name, population
+--       FROM world
+--       WHERE name LIKE "Al%"
+Answer:
+-- Albania 3200000
+-- Algeria 32900000
+
+
