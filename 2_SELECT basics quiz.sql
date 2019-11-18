@@ -17,4 +17,8 @@ Answer:
 -- Albania 3200000
 -- Algeria 32900000
 
+-- 3. Select the code which shows the countries that end in A or L 
 
+Answer:
+SELECT name FROM world
+ WHERE name LIKE '%a' OR name LIKE '%l'
