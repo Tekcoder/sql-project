@@ -1,8 +1,13 @@
 -- Instructions
--- The example uses a WHERE clause to show the population of 'France'. Note that strings (pieces of text that are data) should be in 'single quotes';
+--1- The example uses a WHERE clause to show the population of 'France'. Note that strings (pieces of text that are data) should be in 'single quotes';
 
---1- Modify it to show the population of Germany
+--- Modify it to show the population of Germany
 Answer:
 SELECT population FROM world
   WHERE name = 'Germany'
 
+-- 2- Checking a list The word IN allows us to check if an item is in a list. The example shows the name and population for the countries 'Brazil', 'Russia', 'India' and 'China'.
+-- Show the name and the population for 'Sweden', 'Norway' and 'Denmark'.
+Answer:
+SELECT name, population FROM world
+  WHERE name IN ('Sweden', 'Norway', 'Denmark');
