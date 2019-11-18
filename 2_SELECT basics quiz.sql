@@ -22,3 +22,14 @@ Answer:
 Answer:
 SELECT name FROM world
  WHERE name LIKE '%a' OR name LIKE '%l'
+
+-- 4. Pick the result from the query
+
+-- SELECT name,length(name)
+-- FROM world
+-- WHERE length(name)=5 and region='Europe'
+Answer:
+-- name	length(name)
+-- Italy	5
+-- Malta	5
+-- Spain	5
