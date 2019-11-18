@@ -34,3 +34,9 @@ Answer:
 
 Answer:
 Nauru	990
+
+-- 5. Select the code which would reveal the name and population of countries in Europe and Asia 
+Answer:
+SELECT name, population
+  FROM world
+ WHERE continent IN ('Europe', 'Asia')
