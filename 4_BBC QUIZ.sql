@@ -47,4 +47,12 @@ Answer:
 SELECT name FROM world
  WHERE name IN ('Cuba', 'Togo')
 
- 
+--  7. Select the result that would be obtained from this code:
+
+-- SELECT name FROM world
+--  WHERE continent = 'South America'
+--    AND population > 
+
+Answer:
+Brazil
+Colombia
