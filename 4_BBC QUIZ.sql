@@ -13,3 +13,15 @@ Answer:
 SELECT name
   FROM world
  WHERE name LIKE 'U%'
+
+--  2. Select the code which shows just the population of United Kingdom? 
+
+Answer:
+SELECT population
+  FROM world
+ WHERE name = 'United Kingdom'
+
+--  3. Select the answer which shows the problem with this SQL code - the intended result should be the continent of France: 
+
+Answer:
+'name' should be name
