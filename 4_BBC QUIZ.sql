@@ -40,3 +40,11 @@ Answer:
 SELECT name, population
   FROM world
  WHERE continent IN ('Europe', 'Asia')
+
+--  6. Select the code which would give two rows 
+
+Answer:
+SELECT name FROM world
+ WHERE name IN ('Cuba', 'Togo')
+
+ 
