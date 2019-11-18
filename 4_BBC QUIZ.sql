@@ -25,3 +25,12 @@ SELECT population
 
 Answer:
 'name' should be name
+
+-- 4. Select the result that would be obtained from the following code:
+
+--  SELECT name, population / 10 
+--   FROM world 
+--  WHERE population < 10000
+
+Answer:
+Nauru	990
