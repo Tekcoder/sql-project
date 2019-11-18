@@ -48,3 +48,9 @@ Answer:
 Answer:
 -- Andorra	936
 -- Andorra	4680
+
+-- 6. Select the code that would show the countries with an area larger than 50000 and a population smaller than 10000000 
+Answer:
+SELECT name, area, population
+  FROM world
+ WHERE area > 50000 AND population < 10000000
