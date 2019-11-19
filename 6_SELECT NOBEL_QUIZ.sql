@@ -36,3 +36,13 @@ SELECT yr FROM nobel
  WHERE yr NOT IN(SELECT yr 
                    FROM nobel
                  WHERE subject IN ('Chemistry','Physics'))
+
+-- 6. Select the code which shows the years when a Medicine award was given but no Peace or Literature award was 
+Answer:
+SELECT DISTINCT yr
+  FROM nobel
+ WHERE subject='Medicine' 
+   AND yr NOT IN(SELECT yr FROM nobel 
+                  WHERE subject='Literature')
+   AND yr NOT IN (SELECT yr FROM nobel
+                   WHERE subject='Peace')
