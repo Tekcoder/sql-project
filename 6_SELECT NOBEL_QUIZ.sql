@@ -10,3 +10,9 @@
 
 SELECT winner FROM nobel
  WHERE winner LIKE 'C%' AND winner LIKE '%n'
+
+--  2. Select the code that shows how many Chemistry awards were given between 1950 and 1960 
+Answer:
+SELECT COUNT(subject) FROM nobel
+ WHERE subject = 'Chemistry'
+   AND yr BETWEEN 1950 and 1960
