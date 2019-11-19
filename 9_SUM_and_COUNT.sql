@@ -32,3 +32,12 @@ WHERE continent = 'Africa'
 SELECT COUNT(name) 
 FROM world
 WHERE area >= 1000000 
+
+-- Baltic states population
+-- 5.
+
+-- What is the total population of ('Estonia', 'Latvia', 'Lithuania') 
+
+SELECT SUM(population)
+FROM world
+WHERE name IN ('Estonia', 'Latvia', 'Lithuania') 
