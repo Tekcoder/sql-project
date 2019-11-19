@@ -22,3 +22,10 @@ SELECT COUNT(subject) FROM nobel
   Answer:
 SELECT COUNT(DISTINCT yr) FROM nobel
  WHERE yr NOT IN (SELECT DISTINCT yr FROM nobel WHERE subject = 'Medicine')
+
+--  4. Select the result that would be obtained from the following code:
+
+-- SELECT subject, winner FROM nobel WHERE winner LIKE 'Sir%' AND yr LIKE '196%'
+Answer:
+Medicine	Sir John Eccles
+Medicine	Sir Frank Macfarlane Burnet
