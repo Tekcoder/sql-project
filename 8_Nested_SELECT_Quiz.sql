@@ -42,3 +42,9 @@ Turkey
 
 SELECT name FROM bbc
  WHERE gdp > (SELECT MAX(gdp) FROM bbc WHERE region = 'Africa')
+
+-- 6. Select the code that shows the countries with population smaller than Russia but bigger than Denmark
+
+SELECT name FROM bbc
+ WHERE population < (SELECT population FROM bbc WHERE name='Russia')
+   AND population > (SELECT population FROM bbc WHERE name='Denmark')
