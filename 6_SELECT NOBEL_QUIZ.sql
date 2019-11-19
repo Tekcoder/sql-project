@@ -29,3 +29,10 @@ SELECT COUNT(DISTINCT yr) FROM nobel
 Answer:
 Medicine	Sir John Eccles
 Medicine	Sir Frank Macfarlane Burnet
+
+-- 5. Select the code which would show the year when neither a Physics or Chemistry award was given 
+Answer:
+SELECT yr FROM nobel
+ WHERE yr NOT IN(SELECT yr 
+                   FROM nobel
+                 WHERE subject IN ('Chemistry','Physics'))
