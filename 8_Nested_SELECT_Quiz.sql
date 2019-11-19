@@ -18,3 +18,21 @@ Answer:
 
 SELECT name, region FROM bbc x
  WHERE population < ALL (SELECT population/3 FROM bbc y WHERE y.region = x.region AND y.name != x.name)
+
+
+-- 4. Select the result that would be obtained from the following code:
+
+-- SELECT name FROM bbc
+--  WHERE population >
+--        (SELECT population
+--           FROM bbc
+--          WHERE name='United Kingdom')
+--    AND region IN
+--        (SELECT region
+--           FROM bbc
+--          WHERE name = 'United Kingdom')
+
+France
+Germany
+Russia
+Turkey
