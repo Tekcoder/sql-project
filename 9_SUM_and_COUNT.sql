@@ -41,3 +41,11 @@ WHERE area >= 1000000
 SELECT SUM(population)
 FROM world
 WHERE name IN ('Estonia', 'Latvia', 'Lithuania') 
+
+-- Counting the countries of each continent
+-- 6.
+
+-- For each continent show the continent and number of countries.
+SELECT continent, COUNT(name)
+FROM world
+GROUP BY continent
