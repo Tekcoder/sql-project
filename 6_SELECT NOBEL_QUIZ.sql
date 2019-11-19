@@ -16,3 +16,9 @@ Answer:
 SELECT COUNT(subject) FROM nobel
  WHERE subject = 'Chemistry'
    AND yr BETWEEN 1950 and 1960
+
+  --  3. Pick the code that shows the amount of years where no Medicine awards were given 
+
+  Answer:
+SELECT COUNT(DISTINCT yr) FROM nobel
+ WHERE yr NOT IN (SELECT DISTINCT yr FROM nobel WHERE subject = 'Medicine')
