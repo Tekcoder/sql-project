@@ -14,3 +14,16 @@ SELECT name FROM world
 Answer:
 SELECT name FROM world
 WHERE continent = 'Europe' AND gdp/population > (SELECT gdp/population FROM world WHERE name = 'United Kingdom')
+
+-- 3-List the name and continent of countries in the continents containing either Argentina or Australia. Order by name of the country.
+Answer:
+SELECT name, continent
+FROM world
+WHERE continent IN (SELECT continent FROM world WHERE name = 'Argentina' OR name = 'Australia') ORDER BY name
+
+--4- Which country has a population that is more than Canada but less than Poland? Show the name and the population.
+
+Answer:
+SELECT name, population
+FROM world
+WHERE population > (SELECT population FROM world WHERE name = 'Canada') AND population < (SELECT population FROM world WHERE name = 'Poland')
