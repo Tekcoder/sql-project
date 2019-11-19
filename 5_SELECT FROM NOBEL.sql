@@ -7,3 +7,8 @@ WHERE yr = 1960;
 SELECT winner
 FROM nobel
 WHERE yr = 1960 AND subject = 'Physics';
+
+-- 3) Show the year and subject that won 'Albert Einstein' his prize.
+SELECT yr, subject
+FROM nobel
+WHERE winner = 'Albert Einstein';
