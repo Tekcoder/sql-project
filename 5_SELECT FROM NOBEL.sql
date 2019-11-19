@@ -52,3 +52,8 @@ WHERE subject = 'Medicine' AND yr < 1910 OR subject = 'Literature' AND yr >= 200
 SELECT *
 FROM nobel
 WHERE winner  = 'Peter GrÜnberg';
+
+-- 12) Find all details of the prize won by EUGENE O'NEILL
+SELECT *
+FROM nobel
+WHERE winner  = 'Eugene O\'Neill';
