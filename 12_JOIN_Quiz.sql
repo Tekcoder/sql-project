@@ -43,3 +43,11 @@ SELECT player, teamid, COUNT(*)
 
 DEN	9 June 2012
 GER	9 June 2012
+
+-- 5. Select the code which would show the player and their team for those who have scored against Poland(POL) in National Stadium, Warsaw. 
+
+ SELECT DISTINCT player, teamid 
+   FROM game JOIN goal ON matchid = id 
+  WHERE stadium = 'National Stadium, Warsaw' 
+ AND (team1 = 'POL' OR team2 = 'POL')
+   AND teamid != 'POL'
