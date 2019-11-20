@@ -23,5 +23,7 @@ No result due to invalid use of the WHERE function
 
  SELECT AVG(population) FROM bbc WHERE name IN ('Poland', 'Germany', 'Denmark')
 
+-- 6. Select the statement that shows the medium population density of each region 
 
+ SELECT region, SUM(population)/SUM(area) AS density FROM bbc GROUP BY region
 
