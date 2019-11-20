@@ -34,3 +34,12 @@ SELECT player, teamid, COUNT(*)
  WHERE (team1 = "GRE" OR team2 = "GRE")
    AND teamid != 'GRE'
  GROUP BY player, teamid
+
+-- 4. Select the result that would be obtained from this code:
+
+-- SELECT DISTINCT teamid, mdate
+--   FROM goal JOIN game on (matchid=id)
+--  WHERE mdate = '9 June 2012'
+
+DEN	9 June 2012
+GER	9 June 2012
