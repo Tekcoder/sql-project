@@ -28,3 +28,10 @@ SELECT *
 Crocodile Dundee in Los Angeles
 Flipper
 Lightning Jack
+
+-- 5. Select the statement that lists all the actors that starred in movies directed by Ridley Scott who has id 351 
+
+SELECT name
+  FROM movie JOIN casting ON movie.id = movieid
+  JOIN actor ON actor.id = actorid
+WHERE ord = 1 AND director = 351
