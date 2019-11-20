@@ -6,4 +6,9 @@
 
  SELECT COUNT(name) FROM bbc WHERE population < 150000
 
+--  3. Select the list of core SQL aggregate functions 
+
+AVG(), COUNT(), MAX(), MIN(), SUM()
+
+
 
