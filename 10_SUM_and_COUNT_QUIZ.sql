@@ -19,5 +19,9 @@ AVG(), COUNT(), MAX(), MIN(), SUM()
 
 No result due to invalid use of the WHERE function
 
+-- 5. Select the statement that shows the average population of 'Poland', 'Germany' and 'Denmark'
+
+ SELECT AVG(population) FROM bbc WHERE name IN ('Poland', 'Germany', 'Denmark')
+
 
 
