@@ -22,3 +22,7 @@
 -- 1. You want to find the stadium where player 'Dimitris Salpingidis' scored. Select the JOIN condition to use: 
 
  game  JOIN goal ON (id=matchid)
+
+--  2. You JOIN the tables goal and eteam in an SQL statement. Indicate the list of column names that may be used in the SELECT line: 
+
+ matchid, teamid, player, gtime, id, teamname, coach
