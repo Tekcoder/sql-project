@@ -88,3 +88,16 @@ FROM movie JOIN casting ON movie.id=movieid JOIN actor ON actorid=actor.id
 WHERE name='Rock Hudson'
 GROUP BY yr
 HAVING COUNT(title) > 2;
+
+-- 12.
+
+-- List the film title and the leading actor for all of the films 'Julie Andrews' played in.
+-- Did you get "Little Miss Marker twice"?
+
+SELECT title, name
+FROM movie JOIN casting ON (movieid = movie.id AND ord =1) JOIN actor ON (actorid = actor.id)
+WHERE movie.id IN (SELECT movieid
+FROM casting
+WHERE actorid IN (SELECT id
+FROM actor
+WHERE name='Julie Andrews'));
