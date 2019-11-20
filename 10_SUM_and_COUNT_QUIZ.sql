@@ -10,5 +10,14 @@
 
 AVG(), COUNT(), MAX(), MIN(), SUM()
 
+-- 4. Select the result that would be obtained from the following code:
+
+--  SELECT region, SUM(area)
+--    FROM bbc 
+--   WHERE SUM(area) > 15000000 
+--   GROUP BY region
+
+No result due to invalid use of the WHERE function
+
 
 
