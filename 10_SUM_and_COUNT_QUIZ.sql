@@ -30,3 +30,16 @@ No result due to invalid use of the WHERE function
 --  7. Select the statement that shows the name and population density of the country with the largest population 
  SELECT name, population/area AS density FROM bbc WHERE population = (SELECT MAX(population) FROM bbc)
 
+
+-- 8. Pick the result that would be obtained from the following code:
+
+--  SELECT region, SUM(area) 
+--    FROM bbc 
+--   GROUP BY region 
+--   HAVING SUM(area)<= 20000000
+
+Americas	732240
+Middle East	13403102
+South America	17740392
+South Asia	9437710
+
