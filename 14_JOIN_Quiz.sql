@@ -16,3 +16,15 @@ SELECT *
   FROM casting JOIN actor ON actorid=actor.id
  WHERE name LIKE 'John %'
  GROUP BY name ORDER BY 2 DESC
+
+--  4. Select the result that would be obtained from the following code:
+
+--  SELECT title 
+--    FROM movie JOIN casting ON (movieid=movie.id)
+--               JOIN actor   ON (actorid=actor.id)
+--   WHERE name='Paul Hogan' AND ord = 1
+
+"Crocodile" Dundee
+Crocodile Dundee in Los Angeles
+Flipper
+Lightning Jack
