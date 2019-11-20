@@ -41,3 +41,13 @@ WHERE ord = 1 AND director = 351
 
     link the director column in movies with the primary key in actor
     connect the primary keys of movie and actor via the casting table
+
+-- 7. Select the result that would be obtained from the following code:
+
+--  SELECT title, yr 
+--    FROM movie, casting, actor 
+--   WHERE name='Robert De Niro' AND movieid=movie.id AND actorid=actor.id AND ord = 3
+
+A Bronx Tale	1993
+Bang the Drum Slowly	1973
+Limitless	2011
