@@ -51,3 +51,10 @@ GER	9 June 2012
   WHERE stadium = 'National Stadium, Warsaw' 
  AND (team1 = 'POL' OR team2 = 'POL')
    AND teamid != 'POL'
+
+  --  6. Select the code which shows the player, their team and the time they scored, for players who have played in Stadion Miejski (Wroclaw) but not against Italy(ITA). 
+
+  SELECT DISTINCT player, teamid, gtime
+  FROM game JOIN goal ON matchid = id
+ WHERE stadium = 'Stadion Miejski (Wroclaw)'
+   AND (( teamid = team2 AND team1 != 'ITA') OR ( teamid = team1 AND team2 != 'ITA'))
