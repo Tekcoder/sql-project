@@ -26,3 +26,11 @@
 --  2. You JOIN the tables goal and eteam in an SQL statement. Indicate the list of column names that may be used in the SELECT line: 
 
  matchid, teamid, player, gtime, id, teamname, coach
+
+--  3. Select the code which shows players, their team and the amount of goals they scored against Greece(GRE).
+
+SELECT player, teamid, COUNT(*)
+  FROM game JOIN goal ON matchid = id
+ WHERE (team1 = "GRE" OR team2 = "GRE")
+   AND teamid != 'GRE'
+ GROUP BY player, teamid
