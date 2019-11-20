@@ -69,3 +69,11 @@ SELECT player, teamid, coach, gtime
 SELECT mdate, teamname
 FROM game JOIN eteam ON (team1=eteam.id)
 WHERE coach = 'Fernando Santos'
+
+-- 7.
+
+-- List the player for every goal scored in a game where the stadium was 'National Stadium, Warsaw'
+
+SELECT player
+FROM game JOIN goal ON (id=matchid)
+WHERE stadium = 'National Stadium, Warsaw';
