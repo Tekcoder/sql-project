@@ -58,3 +58,15 @@ GER	9 June 2012
   FROM game JOIN goal ON matchid = id
  WHERE stadium = 'Stadion Miejski (Wroclaw)'
    AND (( teamid = team2 AND team1 != 'ITA') OR ( teamid = team1 AND team2 != 'ITA'))
+
+--    7. Select the result that would be obtained from this code:
+
+-- SELECT teamname, COUNT(*)
+--   FROM eteam JOIN goal ON teamid = id
+--  GROUP BY teamname
+-- HAVING COUNT(*) < 3
+
+Netherlands	2
+Poland	2
+Republic of Ireland	1
+Ukraine	2
