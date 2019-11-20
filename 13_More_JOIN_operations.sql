@@ -101,3 +101,13 @@ FROM casting
 WHERE actorid IN (SELECT id
 FROM actor
 WHERE name='Julie Andrews'));
+
+-- 13.
+
+-- Obtain a list, in alphabetical order, of actors who've had at least 30 starring roles. 
+
+SELECT actor.name
+FROM actor JOIN casting ON casting.actorid = actor.id
+WHERE ord = 1
+GROUP BY name
+HAVING COUNT(*) >= 30;
