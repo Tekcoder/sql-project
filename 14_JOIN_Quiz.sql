@@ -35,3 +35,9 @@ SELECT name
   FROM movie JOIN casting ON movie.id = movieid
   JOIN actor ON actor.id = actorid
 WHERE ord = 1 AND director = 351
+
+-- 6. There are two sensible ways to connect movie and actor. They are: 
+
+
+    link the director column in movies with the primary key in actor
+    connect the primary keys of movie and actor via the casting table
