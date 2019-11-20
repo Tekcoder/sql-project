@@ -9,3 +9,10 @@ SELECT name
 SELECT *
   FROM actor JOIN casting ON actor.id = actorid
   JOIN movie ON movie.id = movieid
+
+  -- 3. Select the statement that shows the list of actors called 'John' by order of number of movies in which they acted 
+
+  SELECT name, COUNT(movieid)
+  FROM casting JOIN actor ON actorid=actor.id
+ WHERE name LIKE 'John %'
+ GROUP BY name ORDER BY 2 DESC
