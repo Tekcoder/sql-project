@@ -24,3 +24,7 @@
 --  3. Select out of following the code which uses a JOIN to show a list of all the departments and number of employed teachers 
 
  SELECT dept.name, COUNT(teacher.name) FROM teacher RIGHT JOIN dept ON dept.id = teacher.dept GROUP BY dept.name
+
+--  4. Using SELECT name, dept, COALESCE(dept, 0) AS result FROM teacher on teacher table will:
+
+display 0 in result column for all teachers without department
