@@ -41,3 +41,21 @@ display 0 in result column for all teachers without department
 -- shows following 'digit': 
 
 'four' for Throd
+
+-- 6. Select the result that would be obtained from the following code:
+
+--  SELECT name, 
+--       CASE 
+--        WHEN dept 
+--         IN (1) 
+--         THEN 'Computing' 
+--        ELSE 'Other' 
+--       END 
+--   FROM teacher
+
+Shrivell	Computing
+Throd	Computing
+Splint	Computing
+Spiregrain	Other
+Cutflower	Other
+Deadyawn	Other
