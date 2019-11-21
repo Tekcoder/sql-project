@@ -16,3 +16,7 @@
 -- 1. Select the code which uses an outer join correctly. 
 
  SELECT teacher.name, dept.name FROM teacher LEFT OUTER JOIN dept ON (teacher.dept = dept.id)
+
+--  2. Select the correct statement that shows the name of department which employs Cutflower - 
+
+ SELECT dept.name FROM teacher JOIN dept ON (dept.id = teacher.dept) WHERE teacher.name = 'Cutflower'
