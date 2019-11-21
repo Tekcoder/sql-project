@@ -28,3 +28,16 @@
 --  4. Using SELECT name, dept, COALESCE(dept, 0) AS result FROM teacher on teacher table will:
 
 display 0 in result column for all teachers without department
+
+-- 5. Query:
+
+-- SELECT name,
+--        CASE WHEN phone = 2752 THEN 'two'
+--             WHEN phone = 2753 THEN 'three'
+--             WHEN phone = 2754 THEN 'four'
+--             END AS digit
+--   FROM teacher
+
+-- shows following 'digit': 
+
+'four' for Throd
